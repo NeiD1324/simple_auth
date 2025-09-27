@@ -2,10 +2,10 @@
 
 Thư mục này gồm 2 ví dụ demo về xác thực với Express:
 
-1) **Basic Authentication** (`basic_auth.js`) — bảo vệ một route bằng HTTP Basic Auth. fileciteturn1file0  
-2) **Cookie-based Session** (`cookie_auth.js`) — đăng nhập, lưu token ngẫu nhiên vào MongoDB với TTL 5 phút, xác thực khi vào route bảo vệ, và xóa khi logout. fileciteturn1file1
+1) **Basic Authentication** (`basic_auth.js`) — bảo vệ một route bằng HTTP Basic Auth.  
+2) **Cookie-based Session** (`cookie_auth.js`) — đăng nhập, lưu token ngẫu nhiên vào MongoDB với TTL 5 phút, xác thực khi vào route bảo vệ, và xóa khi logout. 
 
-Các dependency (Express, cookie-parser, mongoose, uuid) được khai báo trong `package.json`. fileciteturn1file2
+Các dependency (Express, cookie-parser, mongoose, uuid) được khai báo trong `package.json`.
 
 
 ---
@@ -123,13 +123,3 @@ Nếu cookie hết hạn hoặc bị xóa → báo lỗi **401**.
 - **Basic Auth trả về 401/403**  
   - Đảm bảo chọn **Basic Auth** với `admin/12345`. Sai → 403, thiếu header → 401.
 ---
-
-## 4) Nội dung README trong repo cần có
-
-- Giới thiệu ngắn gọn 2 demo.  
-- Lệnh chạy server.  
-- Cách test bằng Postman và ví dụ request.  
-- Lệnh curl thay thế.  
-- Ghi chú về MongoDB & TTL cookie.
-
-Chúc bạn test thành công!
